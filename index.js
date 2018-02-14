@@ -82,6 +82,9 @@ class AD {
       baseDN: config.baseDN,
       username: config.user,
       password: config.pass,
+      attributes:{
+        group:['dn', 'objectCategory', 'cn', 'description', 'managedBy', 'info']
+      },
       tlsOptions: {
         rejectUnauthorized: false
       }
